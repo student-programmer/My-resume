@@ -1,0 +1,58 @@
+@mixin font ($size, $color,){
+	font-family: 'Ubuntu', sans-serif;
+    font-size: $size;
+    color: $color;
+    font-weight:bold;
+}
+@mixin grid ($column, $procent, $row, $rprocent, $gap){
+	display:grid;
+	grid-template-columns:repeat($column, $procent);
+	grid-template-rows:repeat($row,$rprocent );
+	grid-gap:$gap;
+}
+@mixin p ($color){
+	width:95px;
+	height:25px;
+	background-color:$color;
+	border-radius:15px;
+	color:#333041;
+}
+@mixin stext{
+	font-family: 'Ubuntu', sans-serif;
+    font-size:30px;
+    font-weight:bold;
+    color:#fefefe;
+
+}
+@mixin small-text {
+	font-family: 'Ubuntu', sans-serif;
+	 font-size:12px;
+	 color:#d8d8d8;
+}
+@mixin time {
+	font-family:'Ubuntu', sans-serif;
+	 font-size:14px;
+	 color:#b6b6b6;
+	 position:absolute;
+}
+@mixin text-mini{
+	font-family:'Ubuntu', sans-serif;
+	 font-size:18px;
+	 color:#202020;
+	 font-weight:regular;
+	 width:310px;
+	 height:105px;
+	 }
+	 @mixin text-items{
+	 font-family:'Ubuntu', sans-serif;
+	 font-size:18px;
+	 font-weight:bold;
+	 color:#696969;
+	 position:absolute;
+	 }
+	 @mixin small-items {
+	 font-family: 'Ubuntu', sans-serif;
+	 font-size:12px;
+	 color:#93918f;
+	 position:absolute;
+	 }
